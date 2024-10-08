@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarSlot Game</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        .slot-machine { display: flex; justify-content: center; margin-top: 50px; }
+        .reel { width: 100px; height: 100px; margin: 0 10px; border: 2px solid #ccc; font-size: 2em; display: flex; justify-content: center; align-items: center; }
+        button { margin-top: 20px; padding: 10px 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>StarSlot</h1>
+    <div class="slot-machine">
+        <div class="reel" id="reel1">🍒</div>
+        <div class="reel" id="reel2">⭐</div>
+        <div class="reel" id="reel3">🍋</div>
+    </div>
+    <button onclick="spin()">Вращать</button>
+
+    <script>
+        const symbols = ['🍒', '⭐', '🍋', '🔔', '🍉', '🍇', '7️⃣'];
+
+        function spin() {
+            document.getElementById('reel1').textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            document.getElementById('reel2').textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            document.getElementById('reel3').textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+            // Здесь можно добавить логику для передачи данных обратно в Telegram
+            Telegram.WebApp.sendData(JSON.stringify({
+                reel1: document.getElementById('reel1').textContent,
+                reel2: document.getElementById('reel2').textContent,
+                reel3: document.getElementById('reel3').textContent,
+            }));
+        }
+
+        Telegram.WebApp.ready();  // Сообщаем Telegram, что Web App готов к работе
+    </script>
+</body>
+</html>
