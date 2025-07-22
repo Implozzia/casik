@@ -1,0 +1,177 @@
+f:
+  # === ОСНОВНОЙ РАНДОМ — комбинирует всё сразу ===
+  face_full_random: |-
+    - __f/face/structure__, __f/eyes/shape__, __f/nose/type__, __f/lips/style__, __f/skin/detail__, __f/emotion/rando__
+
+  # === СТРУКТУРА ЛИЦА ===
+  face_structure:
+    - oval face
+    - round face
+    - heart-shaped face
+    - square jaw
+    - angular jawline
+    - soft jawline
+    - high cheekbones
+    - prominent cheekbones
+    - sunken cheeks
+    - babyface features
+    - mature bone structure
+    - wide forehead
+    - narrow chin
+    - strong chin
+    - delicate facial structure
+    - sharp features
+
+  # === ФОРМА ГЛАЗ (рандом!) ===
+  eyes_shape:
+    - almond-shaped eyes
+    - round eyes
+    - narrow eyes
+    - upturned eyes
+    - downturned eyes
+    - monolid eyes
+    - double eyelids
+    - wide-set eyes
+    - close-set eyes
+    - hooded eyes
+    - deep-set eyes
+    - prominent eyes
+    - small eyes
+    - large expressive eyes
+
+  # === ТИП НОСА (все варианты) ===
+  nose_type:
+    - small nose
+    - button nose
+    - aquiline nose
+    - straight nose
+    - wide nose
+    - upturned nose
+    - broad nasal bridge
+    - narrow bridge
+    - pierced nose
+    - crooked nose
+    - long nose
+    - snub nose
+
+  # === СТИЛЬ ГУБ (форма, состояние, вид) ===
+  lips_style:
+    - full lips
+    - thin lips
+    - pouty lips
+    - naturally tinted lips
+    - chapped lips
+    - glossy lips
+    - matte finish
+    - bitten lips
+    - crooked smile
+    - asymmetrical lips
+    - defined cupid's bow
+    - swollen lips
+    - tight lips
+
+  # === ДЕТАЛИ КОЖИ (текстура, не тон!) ===
+  skin_detail:
+    rando: |-
+      - smooth skin, natural pores
+      - textured skin, visible pores
+      - flawless complexion
+      - freckles on face:{0.3|0.5|0.7|1.0}
+      - light acne scars, subtle blemishes
+      - tan lines on cheeks and nose
+      - flushed cheeks
+      - oily shine on forehead, nose, chin
+      - dry skin, slight flakiness
+      - glowing skin, healthy sheen
+      - dewy look
+
+  # === ЭМОЦИИ (максимальный выбор) ===
+  emotion:
+    rando: |
+      - __f/emotion/happy__
+      - __f/emotion/seductive__
+      - __f/emotion/thoughtful__
+      - __f/emotion/surprised__
+      - __f/emotion/tired__
+      - __f/emotion/shy__
+      - __f/emotion/neutral__
+      - __f/emotion/mischievous__
+      - __f/emotion/intense__
+      - __f/emotion/orgasm__
+
+    happy:
+      - smiling, bright eyes, dimples
+      - light smile, closed mouth
+      - laughing, eyes crinkled
+      - cheerful, head tilted slightly
+      - happy, slight blush
+
+    seductive:
+      - seductive smile, half-lidded eyes
+      - parted lips, looking sideways
+      - tongue between teeth, smirk
+      - biting lower lip:{0.4|0.6|0.8}
+      - intense gaze, eyebrows lowered
+      - smug expression, raised eyebrow
+
+    thoughtful:
+      - looking away, distant gaze
+      - finger on chin, thinking
+      - furrowed brow, focused
+      - squinting slightly, contemplative
+
+    surprised:
+      - wide eyes, raised eyebrows
+      - open mouth, shocked
+      - one eyebrow raised higher
+      - hand near mouth
+
+    tired:
+      - half-closed eyes, sleepy
+      - dark circles under eyes
+      - resting face, no expression
+      - yawning, mouth open
+
+    shy:
+      - looking down, slight blush
+      - hand near cheek, nervous
+      - hidden smile
+      - eyes peeking up
+
+    neutral:
+      - relaxed face, natural look
+      - calm expression
+      - no smile, no frown
+
+    mischievous:
+      - sly grin, one eyebrow up
+      - playful wink
+      - teasing expression
+
+    intense:
+      - direct eye contact
+      - serious expression
+      - clenched jaw
+      - narrowed eyes, piercing gaze
+
+    orgasm:
+      - rolling eyes, parted lips
+      - head thrown back, mouth open
+      - flushed face, sweat
+      - fingers gripping sheets, biting lip
+      - eyelids fluttering
+
+  # === МИКРОВЫРАЖЕНИЯ (добавляют живость) ===
+  micro_expression:
+    - twitch of the lip
+    - eyebrow flicker
+    - nose wrinkle
+    - eye squint
+    - lip bite
+    - corner of mouth lifts
+    - sudden blink
+    - eye roll
+    - nostril flare
+    - jaw clench
+    - facial tic
+    - quick inhale
